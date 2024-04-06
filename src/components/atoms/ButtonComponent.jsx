@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 
 function ButtonComponent({
     color="primary",
-    text="Button", 
+    children="Button", 
     variant="text", 
     href="",
     sx={},
@@ -15,7 +15,7 @@ function ButtonComponent({
  {
   return (
     <Button variant={variant} 
-     color={color} sx={sx}>{text}</Button>
+     color={color} sx={sx}>{children}</Button>
   )
 }
 

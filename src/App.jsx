@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import './App.css'
 
 import ButtonComponent from './components/atoms/ButtonComponent'
 import NavbarComponent from './components/atoms/NavbarComponent'
+import BannerContent from './components/molecules/BannerContent'
+import Home from './components/My Pages/Home'
 
 //! variant=text,contained,outlined,disabled
 //? disableElevation
@@ -14,11 +14,13 @@ import NavbarComponent from './components/atoms/NavbarComponent'
 
 function App() {
   return (
-    <>
-    <NavbarComponent/>
-      <ButtonComponent variant='outlined' sx={{outline:"none"}}/>
+    <BrowserRouter>
+      <NavbarComponent/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
         
-    </>
+    </BrowserRouter>
   )
 }
 

@@ -15,6 +15,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ButtonComponent from './ButtonComponent';
+import TypoGraphyComponent from './TypoGraphyComponent';
+import { Link } from '@mui/material';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'Fish', 'Stones','Plants','Food','Lights','Air Pumps','Tanks & Bowls'];
@@ -69,7 +71,11 @@ function NavbarComponent(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block',marginLeft:"auto" } }}>
             {navItems.map((item) => (
-              <ButtonComponent key={item} sx={{ color: '#fff', }} text={item}/>
+              <ButtonComponent key={item} sx={{ color: '#fff', }}>
+                  <Link to="/">
+                    {item}
+                  </Link>
+                </ButtonComponent>
             ))}
           </Box>
         </Toolbar>
