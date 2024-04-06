@@ -1,0 +1,5 @@
+/* To remove default black outline of mui button */
+button:focus 
+{
+     outline: none!important;
+}
