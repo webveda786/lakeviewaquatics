@@ -1,6 +1,7 @@
 .fishes
 {
-    margin: 50px 150px;
+    /* margin: 50px 100px; */
+    padding: 50px;
 }
 
 .fishes h6
@@ -10,9 +11,9 @@
 
 .fishes .fish-cards
 {
-    /* display: flex;
-    justify-content: center; */
-    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
 }
 .fishes .fish-cards .card
 {
