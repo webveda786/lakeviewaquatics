@@ -1,0 +1,73 @@
+.banner-content
+{
+    max-width: 600px;
+    border-top:10px groove rgb(128, 0, 128);
+    position: absolute;
+    text-align: center;
+   margin: 20px auto;
+   /* align-self: center; */
+   background-color: #1a132886;
+   padding: 10px 5px;
+   color: rgb(255, 255, 255);
+   
+}
+
+.banner-content h6,.banner-content P
+{
+    font-family:  "Dancing Script", sans-serif;
+    font-size: 20px;
+}
+
+.banner-content h3
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+
+/* ? media quries */
+/* xs */
+@media screen and (min-width:360px)
+{
+    /* .banner-content h3
+{
+    margin-top: 20px;
+   
+    font-size: 13px;
+
+} */
+}
+
+@media (max-width:576px)
+{
+
+    .banner-content
+    {
+        max-width: 285px;
+        margin-top: 73px;
+        padding: 5px;
+        border-top-width: 5px;
+
+    }
+    .banner-content h3
+    {
+        font-size: 22px;
+    }
+}
+@media (max-width:768px)
+{
+
+    .banner-content
+    {
+        max-width: 310px;
+        margin-top: 73px;
+        padding: 5px 10px;
+        border-top-width: 5px;
+
+    }
+    .banner-content h3
+    {
+        font-size: 22px;
+    }
+}

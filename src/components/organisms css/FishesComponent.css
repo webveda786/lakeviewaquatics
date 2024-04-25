@@ -1,0 +1,20 @@
+.fishes
+{
+    margin: 50px 150px;
+}
+
+.fishes h6
+{
+    margin-top: -20px;
+}
+
+.fishes .fish-cards
+{
+    /* display: flex;
+    justify-content: center; */
+    border: 2px solid green;
+}
+.fishes .fish-cards .card
+{
+    box-shadow: 2px 2px  60px -20px rgba(48, 47, 47, 0.39)!important;
+}
