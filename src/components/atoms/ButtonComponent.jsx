@@ -10,12 +10,12 @@ function ButtonComponent({
     variant="text", 
     href="",
     sx={},
-    onClick=()=>{}, 
+    onclick=()=>{}, 
     className=""}) 
  {
   return (
     <Button variant={variant} 
-     color={color} sx={sx}>{children}</Button>
+     color={color} sx={sx} onClick={onclick} className={className}>{children}</Button>
   )
 }
 

@@ -1,0 +1,42 @@
+nav a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Tilt Neon", sans-serif!important;
+}
+
+nav h6
+{
+    font-family: "Tilt Neon", sans-serif!important;
+}
+
+
+@media screen and (max-width:576px)
+{
+nav .MuiToolbar-root
+{
+    justify-content: space-between;
+}
+    nav h6
+    {
+        /* position: absolute;
+        right: 10px;
+        font-size: 30px!important; */
+        /* margin-left: auto; */
+
+    }
+}
+@media screen and (max-width:768px)
+{
+    nav .MuiToolbar-root
+{
+    justify-content: space-between;
+}
+    /* nav h6
+    {
+        position: absolute;
+        right: 20px;
+        font-size: 30px!important;
+    } */
+  
+}

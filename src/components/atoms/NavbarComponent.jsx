@@ -17,9 +17,12 @@ import Button from '@mui/material/Button';
 import ButtonComponent from './ButtonComponent';
 import TypoGraphyComponent from './TypoGraphyComponent';
 import { Link } from '@mui/material';
-
+import "../atom css/NavbarComponent.css"
+import logo from "../../assets/images/logo.png";
 const drawerWidth = 240;
-const navItems = ['Home', 'Fish', 'Stones','Plants','Food','Lights','Air Pumps','Tanks & Bowls'];
+// const navItems = ['Home', 'Fish', 'Stones','Plants','Food','Lights','Air Pumps','Tanks & Bowls'];
+const navItems = ['Home', 'Fish', 'Stones','Tanks & Bowls'];
+
 
 function NavbarComponent(props) {
   const { window } = props;
@@ -31,8 +34,8 @@ function NavbarComponent(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+      <Typography variant="h6" sx={{ my: 2,fontFamily:"tilt neon" }}>
+        Lake View Aquatics
       </Typography>
       <Divider />
       <List>
@@ -52,7 +55,7 @@ function NavbarComponent(props) {
   return (
     <Box sx={{ display: 'flex'}}>
       <CssBaseline />
-      <AppBar component="nav" sx={{background:"#109010e8"}}>
+      <AppBar component="nav" sx={{background:"#07033a"}}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -67,7 +70,8 @@ function NavbarComponent(props) {
             variant="h6"
             sx={{}}
           >
-            Lakeview Aquatics
+            Lake View Aquatics
+            <img src="" alt="" />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block',marginLeft:"auto" } }}>
             {navItems.map((item) => (

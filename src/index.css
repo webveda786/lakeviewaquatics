@@ -1,5 +1,24 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+html,body
+{
+  width: 100%;
+}
 
+body
+{
+  /* background-color: #1a1328!important; */
+}
 
+a
+{
+  text-decoration: none!important;
+}
 
 /* body {
   margin: 0;

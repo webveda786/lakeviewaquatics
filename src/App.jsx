@@ -1,9 +1,8 @@
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import './App.css'
 
-import ButtonComponent from './components/atoms/ButtonComponent'
+
 import NavbarComponent from './components/atoms/NavbarComponent'
-import BannerContent from './components/molecules/BannerContent'
 import Home from './components/My Pages/Home'
 
 //! variant=text,contained,outlined,disabled
