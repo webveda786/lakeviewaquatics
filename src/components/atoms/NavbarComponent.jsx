@@ -18,7 +18,7 @@ import ButtonComponent from './ButtonComponent';
 import TypoGraphyComponent from './TypoGraphyComponent';
 import { Link } from '@mui/material';
 import "../atom css/NavbarComponent.css"
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 const drawerWidth = 240;
 // const navItems = ['Home', 'Fish', 'Stones','Plants','Food','Lights','Air Pumps','Tanks & Bowls'];
 const navItems = ['Home', 'Fish', 'Stones','Tanks & Bowls'];
@@ -66,13 +66,13 @@ function NavbarComponent(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h6"
             sx={{}}
-          >
-            Lake View Aquatics
-            <img src="" alt="" />
-          </Typography>
+          > */}
+            {/* Lake View Aquatics */}
+            <img src={logo} alt="" style={{width:"75px"}} />
+          {/* </Typography> */}
           <Box sx={{ display: { xs: 'none', sm: 'block',marginLeft:"auto" } }}>
             {navItems.map((item) => (
               <ButtonComponent key={item} sx={{ color: '#fff', }}>

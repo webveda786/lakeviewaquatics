@@ -5,24 +5,28 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ButtonComponent from '../atoms/ButtonComponent';
+import RatingComponent from '../atoms/RatingComponent';
 
 
-function CardComponent({imageUrl="",name=""}) {
+function CardComponent({imageUrl="",name="",rating=""}) {
   return (
-    <Card sx={{ maxWidth: 350,borderRadius:"20px" }} className='card'>
+    <Card sx={{ maxWidth: 350,borderRadius:"10px" }} className='card'>
         <img src={imageUrl}  alt="" style={{width:"100%",objectFit:"cover",height:"280px"}} />
     <CardContent>
       <Typography gutterBottom variant="h6" component="h6" sx={{fontWeight:"bold"}}>
         {name}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      {/* <Typography variant="body2" color="text.secondary">
         Lizards are a widespread group of squamate reptiles, with over 6,000
         species, ranging across all continents except Antarctica
-      </Typography>
+      </Typography> */}
     </CardContent>
-    <CardActions>
-      <Button size="small">Share</Button>
-      <Button size="small">Learn More</Button>
+    <CardActions sx={{display:"flex",justifyContent:"space-between", paddingBottom:"10px"}}>
+      {/* <Button size="small">Share</Button>
+      <Button size="small">Learn More</Button> */}
+      <RatingComponent value={rating}/>
+      <ButtonComponent size='snall' variant='contained' color='success' sx={{float:"right"}}>Buy Now</ButtonComponent>
     </CardActions>
   </Card>
   )

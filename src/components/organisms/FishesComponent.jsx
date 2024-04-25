@@ -9,7 +9,7 @@ import "../organisms css/FishesComponent.css"
 function FishesComponent() {
   return (
     <div className='fishes'>
-        <TypoGraphyComponent variant='h4' text='Fishes' component='h4'/>
+        <TypoGraphyComponent variant='h4' text='Fishes' component='h4' sx={{textAlign:"center",fontWeight:"bold",margin:"20px"}} />
        <div className="fish-cards">
             <GridComponent length={3} mapdata={fishes}/>
        </div>
