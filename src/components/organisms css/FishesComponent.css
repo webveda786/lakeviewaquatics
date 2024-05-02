@@ -1,7 +1,7 @@
 .fishes
 {
     /* margin: 50px 100px; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 50px;
 }
 
@@ -33,12 +33,13 @@
             .fishes .fish-cards .card
             {
                 width: 100%;
-                /* padding: 10px; */
+                padding: 10px!important;
+                margin-top: 20px;
             }
             .css-zow5z4-MuiGrid-root>.MuiGrid-item
             {
                 padding: 0!important;
-                border: 2px solid red;
+                /* border: 2px solid red; */
             }
         }
 
@@ -56,7 +57,7 @@
             .css-zow5z4-MuiGrid-root>.MuiGrid-item
             {
                 padding: 0;
-                border: 2px solid red;
+                /* border: 2px solid red; */
             }
         }
 
