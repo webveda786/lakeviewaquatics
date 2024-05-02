@@ -16,6 +16,7 @@ function Home() {
         <BannerContent/>
       </div>
         <FishesComponent/>
+        
     </section>
   )
 }

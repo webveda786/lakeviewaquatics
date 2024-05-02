@@ -4,6 +4,7 @@ import './App.css'
 
 import NavbarComponent from './components/atoms/NavbarComponent'
 import Home from './components/My Pages/Home'
+import FooterComponent from './components/organisms css/FooterComponent'
 
 //! variant=text,contained,outlined,disabled
 //? disableElevation
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
       </Routes>
-        
+      <FooterComponent/>
     </BrowserRouter>
   )
 }

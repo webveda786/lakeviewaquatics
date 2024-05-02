@@ -2,17 +2,15 @@ import { Grid } from '@mui/material'
 import React, { Fragment } from 'react'
 import CardComponent from './CardComponent';
 
-function GridComponent({length=3,xs=12,sm=6,md=6,lg=3,children="",mapdata=[]}) {
-    let  grid = [""]
-    grid.length=length;
-    console.log(grid.length)
+function GridComponent({xs=12,sm=6,md=6,lg=3,children="",mapdata=[],bgcolor="gray"}) {
+   
   return (
-    <Grid container spacing={3} >
+    <Grid container spacing={3} bgcolor={bgcolor}>
         {mapdata.map((data,id)=>
         {
             return <Fragment key={id}>
                 <Grid display={"flex"} justifyContent={"center"} alignItems={"center"} item xs={xs} sm={sm} md={md} lg={lg}>
-                    {children?children:<CardComponent {...data}/>}
+                    {children?<CardComponent {...data}/>:children}
                 </Grid>
             </Fragment>
         })}
