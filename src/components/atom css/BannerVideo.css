@@ -12,17 +12,50 @@
 
  /* !  `xs` no media query */
 
+ /* @media (max-width:3px)
+ {
+     video
+   {
+      margin-top: 70px;
+   
+   } 
+ }*/
+/* --------------------------- */
+ /* ? media quries */
+        /* xs */
+        @media (min-width:320px) and  (max-width:479.98px) {
+            
+        video
+        {
+         /* margin-top: 20px; */
+        
+            object-fit: fill;
+        }
 
+     }
+
+     @media (min-width: 480px) and (max-width: 575.98px) {
+
+       
+     }
+
+     @media (min-width: 576px) and (max-width:767.98px) {
+
+         
+     }
+
+     
+     @media (min-width: 768px) and (max-width:991.98px ) {
+
+        
+     }
+/* ---------------------------- */
 
  /* ! `sm` applies to x-small devices (portrait phones, less than 576px) */
 
  @media (max-width:576px)
  {
-     video
-   {
-      margin-top: 56px;
    
-   }
  }
 
  /* ! `md` applies to small devices (landscape phones, less than 768px) */
@@ -39,3 +72,27 @@
 
 /*! `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {  }
+
+
+
+/* ? chatgpt breakpoints */
+
+/* Extra Small Devices (Phones):
+Typically less than 576px wide.
+Example: @media (max-width: 575.98px) { ... }
+
+Small Devices (Tablets):
+Width between 576px and 767px.
+Example: @media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+Medium Devices (Landscape Tablets and Small Laptops):
+Width between 768px and 991px.
+Example: @media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+Large Devices (Desktops and Laptops):
+Width between 992px and 1199px.
+Example: @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+Extra Large Devices (Large Desktops and High-Resolution Screens):
+Typically 1200px and above.
+Example: @media (min-width: 1200px) { ... } */

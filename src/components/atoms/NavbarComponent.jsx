@@ -18,7 +18,7 @@ import ButtonComponent from './ButtonComponent';
 import TypoGraphyComponent from './TypoGraphyComponent';
 import { Link } from '@mui/material';
 import "../atom css/NavbarComponent.css"
-import logo from "../../assets/images/logo1.png";
+import logo from "../../assets/images/logo.png";
 const drawerWidth = 240;
 // const navItems = ['Home', 'Fish', 'Stones','Plants','Food','Lights','Air Pumps','Tanks & Bowls'];
 const navItems = ['Home', 'Fish', 'Stones','Tanks & Bowls'];
@@ -55,7 +55,7 @@ function NavbarComponent(props) {
   return (
     <Box sx={{ display: 'flex'}}>
       <CssBaseline />
-      <AppBar component="nav" sx={{background:"#07033a"}}>
+      <AppBar component="nav">
         <Toolbar>
           <IconButton
             color="inherit"
@@ -71,7 +71,7 @@ function NavbarComponent(props) {
             sx={{}}
           > */}
             {/* Lake View Aquatics */}
-            <img src={logo} alt="" style={{width:"75px"}} />
+            <img src={logo} alt=""  />
           {/* </Typography> */}
           <Box sx={{ display: { xs: 'none', sm: 'block',marginLeft:"auto" } }}>
             {navItems.map((item) => (

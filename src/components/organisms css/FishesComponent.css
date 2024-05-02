@@ -1,21 +1,71 @@
 .fishes
 {
     /* margin: 50px 100px; */
+    border: 2px solid red;
     padding: 50px;
 }
 
 .fishes h6
 {
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 
 .fishes .fish-cards
 {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     /* border: 2px solid green; */
 }
 .fishes .fish-cards .card
 {
-    box-shadow: 2px 2px  60px 10px rgba(70, 69, 69, 0.842)!important;
+    box-shadow: 2px 2px  400px 1px #0d7d617c!important;
 }
+
+
+/* ? media quries */
+        /* xs */
+        @media (min-width:320px) and  (max-width:479.98px) {
+            .fishes
+            {
+                /* padding: 0; */
+            }
+            .fishes .fish-cards .card
+            {
+                width: 100%;
+                /* padding: 10px; */
+            }
+            .css-zow5z4-MuiGrid-root>.MuiGrid-item
+            {
+                padding: 0!important;
+                border: 2px solid red;
+            }
+        }
+
+        @media (min-width: 480px) and (max-width: 575.98px) {
+
+            .fishes
+            {
+                /* padding: 0; */
+            }
+            .fishes .fish-cards .card
+            {
+                width: 100%;
+                /* padding: 10px; */
+            }
+            .css-zow5z4-MuiGrid-root>.MuiGrid-item
+            {
+                padding: 0;
+                border: 2px solid red;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width:767.98px) {
+
+        }
+
+        
+        @media (min-width: 768px) and (max-width:991.98px ) {
+
+           
+        }
