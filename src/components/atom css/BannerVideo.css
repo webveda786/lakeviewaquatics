@@ -10,6 +10,9 @@
     z-index: -1;
  }
 
+ video::-webkit-media-controls {
+   display:none !important;
+}
  /* !  `xs` no media query */
 
  /* @media (max-width:3px)

@@ -12,7 +12,6 @@ function BannerVideo() {
             loop= {true}
             muted
             poster="https://i.pinimg.com/originals/1d/7b/a2/1d7ba250bdf6beea3feca7da9c522ea6.gif"
-            
           >
             <source
               src="https://videos.pexels.com/video-files/855798/855798-hd_1920_1080_30fps.mp4"
