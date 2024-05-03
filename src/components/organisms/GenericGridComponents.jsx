@@ -1,16 +1,15 @@
 import { Grid } from '@mui/material'
 import React, { Fragment } from 'react'
-import CardComponent from './CardComponent';
 
-function GridComponent({xs=12,sm=6,md=6,lg=3,children="",mapdata=[],bgcolor="gray"}) {
-   
+function GenericGridComponents({xs=12,sm=6,md=6,lg=3,children="",mapdata=[],bgcolor="gray",sx={},padding=1}) {
+    console.log(padding)
   return (
-    <Grid container spacing={3} bgcolor={bgcolor}>
-        {mapdata.map((data,id)=>
+    <Grid container bgcolor={bgcolor} spacing={2} sx={sx} p={padding}>
+         {mapdata.map((data,id)=>
         {
             return <Fragment key={id}>
                 <Grid item display={"flex"} justifyContent={"center"} alignItems={"center"}  xs={xs} sm={sm} md={md} lg={lg}>
-                    {children?<CardComponent {...data}/>:children}
+                   {data}
                 </Grid>
             </Fragment>
         })}
@@ -18,4 +17,4 @@ function GridComponent({xs=12,sm=6,md=6,lg=3,children="",mapdata=[],bgcolor="gra
   )
 }
 
-export default GridComponent
+export default GenericGridComponents
