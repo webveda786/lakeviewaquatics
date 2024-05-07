@@ -1,0 +1,10 @@
+.card-content h6
+{
+    font-family: "Tilt Neon", sans-serif;  
+    /* font-size: 15px;  */
+}
+
+.card-actions button
+{
+    font-family: "Tilt Neon", sans-serif;  
+}

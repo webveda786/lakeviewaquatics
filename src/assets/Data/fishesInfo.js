@@ -29,7 +29,7 @@ export let fishes=[
         price:234
     },
     {
-        name:"Indonesian Tiger Fish1",
+        name:"Indonesian Tiger Fish",
         info:"",
         imageUrl:Indonesian_Tiger_fish1,
         rating:4.5,

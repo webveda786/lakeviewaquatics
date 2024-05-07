@@ -5,7 +5,7 @@ import { Box } from '@mui/material'
 function FooterLinks() {
   return (
     <Box>
-      <TypoGraphyComponent variant='h5' component='h5' text='Usefull Links'/>
+      
     </Box>
   )
 }
