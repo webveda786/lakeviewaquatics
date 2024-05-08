@@ -10,6 +10,7 @@ function BannerVideo() {
           <video
             autoPlay
             loop= {true}
+            playsInline
             muted
             poster="https://i.pinimg.com/originals/1d/7b/a2/1d7ba250bdf6beea3feca7da9c522ea6.gif"
           >

@@ -1,0 +1,83 @@
+.subscribe
+{
+    /* border: 1px solid red; */
+    width: 80%;
+    position: relative;
+    margin-top: 10px;
+}
+.subscribe-input
+{
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    width: 100%;
+}
+.subscribe-input:focus
+{
+    outline: 1px solid black;
+}
+.subscribe-input::placeholder
+{
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 16px;
+}
+.subscribe-btn
+{
+    padding: 14px 15px;
+    border: none; 
+    outline: none;
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #def071;
+    font-family: "Tilt Neon", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0d7d61;
+}
+ /* ? media quries */
+/* Custom, iPhone Retina */ 
+@media (min-width:320px) and  (max-width:479.98px) {
+    
+    .subscribe
+    {
+        width: 100%;
+    }
+
+}
+/* Extra Small Devices, Phones */ 
+@media (min-width: 480px) and (max-width: 575.98px) {
+
+    nav
+    {
+        height: 56px;
+    }
+    nav img
+    {
+        width: 58px!important;
+    }
+    nav .MuiToolbar-root
+    {
+        justify-content: space-between;
+    }
+}
+/* Small Devices, Tablets */
+@media (min-width: 576px) and (max-width:767.98px) {
+
+    
+}
+/* Medium Devices, Desktops */
+
+@media (min-width: 768px) and (max-width:991.98px ) {
+
+   
+}
+
+/* Large Devices, Wide Screens */
+
+@media (min-width: 992px) and (max-width:1200px ) {
+
+   
+}

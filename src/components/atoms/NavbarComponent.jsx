@@ -21,7 +21,7 @@ import "../atom css/NavbarComponent.css"
 import logo from "../../assets/images/logo.png";
 const drawerWidth = 240;
 // const navItems = ['Home', 'Fish', 'Stones','Plants','Food','Lights','Air Pumps','Tanks & Bowls'];
-const navItems = ['Home', 'Fish', 'Stones','Tanks & Bowls'];
+const navItems = ['Home', 'Fishes', 'Stones','Tanks & Bowls'];
 
 
 function NavbarComponent(props) {

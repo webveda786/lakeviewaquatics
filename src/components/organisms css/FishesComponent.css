@@ -5,9 +5,10 @@
     padding: 50px;
 }
 
-.fishes h6
+.fishes h4
 {
-    /* margin-top: -20px; */
+    font-family: "Tilt Neon", sans-serif;  
+    
 }
 
 .fishes .fish-cards

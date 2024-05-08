@@ -7,13 +7,14 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import ButtonComponent from '../atoms/ButtonComponent';
 import RatingComponent from '../atoms/RatingComponent';
+import "../molecules css/CardComponent.css"
 
 
 function CardComponent({imageUrl="",name="",rating=""}) {
   return (
     <Card sx={{ maxWidth: 350,borderRadius:"10px" }} className='card'>
         <img src={imageUrl}  alt="" style={{width:"100%",objectFit:"cover",height:"280px"}} />
-    <CardContent>
+    <CardContent className='card-content'>
       <Typography gutterBottom variant="h6" component="h6" sx={{fontWeight:"bold"}}>
         {name}
       </Typography>
@@ -22,11 +23,11 @@ function CardComponent({imageUrl="",name="",rating=""}) {
         species, ranging across all continents except Antarctica
       </Typography> */}
     </CardContent>
-    <CardActions sx={{display:"flex",justifyContent:"space-between", paddingBottom:"10px"}}>
+    <CardActions sx={{display:"flex",justifyContent:"space-between", paddingBottom:"10px"}} className='card-actions'>
       {/* <Button size="small">Share</Button>
       <Button size="small">Learn More</Button> */}
       <RatingComponent value={rating}/>
-      <ButtonComponent size='snall' variant='contained' color='success' sx={{float:"right"}}>Buy Now</ButtonComponent>
+      <ButtonComponent size='small' variant='contained' color='success' sx={{float:"right"}}>Buy Now</ButtonComponent>
     </CardActions>
   </Card>
   )
