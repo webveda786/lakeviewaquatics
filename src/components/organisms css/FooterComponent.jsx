@@ -10,18 +10,21 @@ import TypoGraphyComponent from '../atoms/TypoGraphyComponent'
 
 function FooterComponent() {
     let mapdataContent=[<FooterAddress/>,<FooterLinks/>,<FooterSearch/>]
-    let mapdataHeadings=[<TypoGraphyComponent variant='h5' component='h5' text='Lake View Aquatics'/>,
-    <TypoGraphyComponent variant='h5' component='h5' text='Usefull Links'/>,
-<TypoGraphyComponent variant='h5' component='h5'  text="Our Newletter"/>]
+    let mapdataHeadings=[,
+    ,
+]
 // Subscribe To Our Newsletter And Recieve The Latest Updates About Our Products And Fishes
 
   return (
     <Box className="footer" bgcolor="#0d7d61">
-        <GenericGridComponents xs={12} sm={12} lg={4}
-         mapdata={mapdataHeadings}  sx={{marginBottom:"10px",textAlign:"center"}}/>
+        {/* <GenericGridComponents xs={12} sm={12} lg={4}
+         mapdata={mapdataHeadings}  sx={{marginBottom:"10px",textAlign:"center"}}/> */}
 
          <GenericGridComponents xs={12} sm={12} lg={4}
          mapdata={mapdataContent} sx={{textAlign:"center"}} />
+         <hr />
+         <TypoGraphyComponent variant='caption' component='p' text={`© ${new Date().getFullYear()} Lake View Aquatics.All Rights Reserved`}/>
+
     </Box>
   )
 }

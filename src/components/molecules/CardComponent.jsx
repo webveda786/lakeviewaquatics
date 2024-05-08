@@ -27,7 +27,7 @@ function CardComponent({imageUrl="",name="",rating=""}) {
       {/* <Button size="small">Share</Button>
       <Button size="small">Learn More</Button> */}
       <RatingComponent value={rating}/>
-      <ButtonComponent size='snall' variant='contained' color='success' sx={{float:"right"}}>Buy Now</ButtonComponent>
+      <ButtonComponent size='small' variant='contained' color='success' sx={{float:"right"}}>Buy Now</ButtonComponent>
     </CardActions>
   </Card>
   )
